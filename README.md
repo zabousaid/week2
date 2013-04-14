@@ -9,12 +9,22 @@ In order to complete the homework, you will need a working development environme
 
 **The homework is due Friday, April 19th, 11:59pm.**
 
-## HOW TO DO THE HOMEWORK
+### How to do the Homework
 
-Open the week2.rb file, and read through the whole thing.  Instructions are provided at the top.
+Go to your homework folder, open the week2.rb file, and read through the whole thing.  Instructions are provided at the top.
 
 Some methods that you'll need to write have been started, but most have not been written at all.  You'll need to add your own methods to the top of the file so that the tests will pass.
 
 You'll need to read the tests to find out what your method names are expected to be.
 
-Have fun!  Let us know if you have any questions.
+### How to run the tests
+
+There are two ways:
+
+1. Run the "rake" command from your command line.  Make sure the homework directory is the current directory.
+2. Run the ruby command from your command line: "ruby week2.rb", again from the homework directory.
+
+You can try both and see if there's anything different.
+
+Have fun!  Let us know if you have any questions.  Use the class email list: entr925@breeze123.com.
+
