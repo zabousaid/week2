@@ -1,0 +1,20 @@
+task :test do
+  puts "Grading your homework..."
+  run_cmd = FileList['week2.rb'].map { |f| "require \"#{File.expand_path(f)}\";" }.join
+  output = `ruby -e '#{run_cmd}'`
+  status = $?.exitstatus
+  if (status == 0)
+    puts "CONGRATULATIONS!  All tests pass.  Grade: 100%"
+  else
+    puts "-" * 50
+    puts status.to_i
+    output.gsub!(/^.*ruby.*$/,'')
+    output.squeeze!("\n")
+    puts output
+    puts
+    puts "Keep trying! At least one test case is still failing."
+  end
+end
+
+task :default => :test
+
